@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prehistoric Creatures</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="disclaimer">
+        <p>
+          This is an experiment in using AI. Some images, copy, audio, and code
+          are generated with AI.
+        </p>
+      </section>
+
+      <section class="hero">
+        <div class="main-image">
+          <img src="images/Hero.png" alt="Dinosaur image" />
+        </div>
+        <div class="intro">
+          <h1>Welcome to Prehistoric Creatures</h1>
+          <p>
+            Step into the exciting world of dinosaurs and other ancient
+            creatures! Discover their amazing history, check out cool 3D models,
+            and take a journey back to the time of the giants.
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#t-rex">T-Rex</a></li>
+        <li><a href="#triceratops">Triceratops</a></li>
+        <li><a href="#mammoth">Mammoth</a></li>
+      </ul>
+    </nav>
+
+    <section id="t-rex" class="dino-section">
+      <h2>T-Rex</h2>
+      <div class="content">
+        <div class="model">
+          <model-viewer
+            src="3D models/T-Rex.glb"
+            alt="A 3D model of an astronaut"
+            ar
+            auto-rotate
+            camera-controls
+            tone-mapping="neutral"
+            poster="posters/T-Rex.webp"
+            shadow-intensity="1"
+            exposure="0.66"
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="0.20558975590349782m -4.55026165778223m 2.359092381744574m"
+              data-normal="-0.9184283653875179m -0.14760796288356157m 0.3670166575851524m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Skull</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="-7.639042751123112m -0.9259676059133426m -13.478909753260666m"
+              data-normal="-0.9631273997763864m 0.03791219072254546m -0.2663611788429283m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Arm</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="-5.11417068026254m -7.516626224166535m -36.214412770985945m"
+              data-normal="-0.9914503956185208m -0.12783758367191084m -0.02614699272967798m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Leg</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-5"
+              data-position="3.152940948827882m 7.204513044435329m -60.83942767275468m"
+              data-normal="-0.8609318984225187m 0.3411899216693396m 0.37734030215426m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Tail</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-6"
+              data-position="-0.3463127890607627m 11.949248215461278m -34.181402639300735m"
+              data-normal="-0.7985251326486505m 0.44445652637643035m -0.4059753794133986m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Hip</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-7"
+              data-position="4.297128830998449m 6.963701337290476m -18.523105111483467m"
+              data-normal="-0.9677870220795171m -0.1097108049090124m -0.22660939782073772m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Ribs</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-8"
+              data-position="7.689339337594394m -14.34568177851732m -10.519831330146484m"
+              data-normal="-0.8734846884957727m 0.26340416134103584m 0.40944199436754m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Poor Triceratops</div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">View in your space</button>
+          </model-viewer>
+        </div>
+        <div class="info">
+          <p>
+            One of the largest meat-eating dinosaurs, T. rex was the top
+            predator of its time. It had a super strong bite and sharp teeth to
+            hunt other dinosaurs, possibly including Triceratops. It lived in
+            North America and Asia during the Late Cretaceous period.
+          </p>
+          <audio controls>
+            <source src="audio/T-rex.wav" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="gallery">
+        <img
+          src="images/T-Rex/Tyranosaurus-Camera 1.png"
+          alt="Gallery image 1"
+        />
+        <img
+          src="images/T-Rex/Tyranosaurus-Camera 2.png"
+          alt="Gallery image 2"
+        />
+        <img
+          src="images/T-Rex/Tyranosaurus-Camera 3.png"
+          alt="Gallery image 3"
+        />
+      </div>
+    </section>
+
+    <section id="triceratops" class="dino-section">
+      <h2>Triceratops</h2>
+      <div class="content">
+        <div class="model">
+          <model-viewer
+            src="3D models/Triceratops.glb"
+            alt="A 3D model of an astronaut"
+            ar
+            poster="posters/Triceratops.webp"
+            auto-rotate
+            camera-controls
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="-0.09513258348019615m 0.03416484723098634m 2.360662591992874m"
+              data-normal="-0.4849120156158223m 0.8701670210556933m -0.08757678104646828m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Brow horn</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="-0.8017221943672492m -0.6684502836952753m 2.4916626078056496m"
+              data-normal="0.09930828516254285m 0.63209886216766m 0.7684978158358192m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Beak</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="0.37644600720955435m 0.2346578351726123m 1.3951575681257429m"
+              data-normal="-0.09409403697160744m 0.2742584202615142m -0.9570416036526543m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Frill</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="0.6098718948327715m -0.2737633957563297m -2.1866347387413185m"
+              data-normal="-0.4801035284580575m 0.8262709784387834m -0.29457914412249037m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Tail</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-5"
+              data-position="-1.0780020120320808m -0.5376313617379793m -0.19699097043039426m"
+              data-normal="-0.7716352990436666m 0.5844441737711696m -0.25100592227022495m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Feet</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-6"
+              data-position="0.5721660102571215m -0.49281863024602046m 0.10870428327514325m"
+              data-normal="-0.36843285928699765m 0.9291635627094598m -0.030204336289208485m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Ribs</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-7"
+              data-position="1.061154643075609m 0.3731419012468127m -0.8721221748254002m"
+              data-normal="0.21195305398467298m 0.8809451981142464m 0.4230974601980276m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Illium</div>
+            </button>
+          </model-viewer>
+        </div>
+        <div class="info">
+          <p>
+            This was a huge, plant-eating dinosaur with three horns on its face
+            and a bony frill around its neck. It lived in North America during
+            the Late Cretaceous period. Triceratops probably used its horns and
+            frill to show off or protect itself.
+          </p>
+          <audio controls>
+            <source src="audio/Triceratops.wav" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="gallery">
+        <img
+          src="images/Triceratops/Triceratops-Camera 1.png"
+          alt="Gallery image 1"
+        />
+        <img
+          src="images/Triceratops/Triceratops-Camera 2.png"
+          alt="Gallery image 2"
+        />
+        <img
+          src="images/Triceratops/Triceratops-Camera 3.png"
+          alt="Gallery image 3"
+        />
+      </div>
+    </section>
+
+    <section id="mammoth" class="dino-section">
+      <h2>Mammoth</h2>
+      <div class="content">
+        <div class="model">
+          <model-viewer
+            src="3D models/Mammoth.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="posters/Mammoth.webp"
+            shadow-intensity="1"
+            exposure="0.49"
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="-0.49060104595072396m 0.25928724742013687m 1.5104096052815974m"
+              data-normal="-0.7069902179412471m 0.34946973319263486m -0.6148461086464294m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Tusk</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="-0.14102022342247444m 0.7578192408755933m 1.225002078619666m"
+              data-normal="-0.9437905014071629m 0.33011129708101916m -0.016912155188009818m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Alveolus</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="-0.19150639754859533m 1.6071518496626518m 0.7581235701173921m"
+              data-normal="-0.5185054298882112m 0.8165615214984979m -0.25373096142272356m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Cranium</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="-0.08746299490641363m 0.694465188768147m 0.9195641533663976m"
+              data-normal="-0.8096663815254351m 0.19305560907566227m 0.5542290884029217m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Mandible</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-5"
+              data-position="0.005344020714288078m 1.3397978774085848m -0.8167260764968742m"
+              data-normal="-0.9836733991578082m 0.17727431346449107m 0.03099131450934432m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Vertebrae</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-6"
+              data-position="-0.008077767856642382m 0.4542382830514935m -2.2453820339297446m"
+              data-normal="-0.782838860261447m 0.5814738387362989m -0.22147571814948858m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Caudal Vertebrae</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-7"
+              data-position="-0.39494734531786335m -0.367641871772169m -1.9453954435867777m"
+              data-normal="-0.7103738834600247m -0.11841075798342127m 0.6937923594936131m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Legs</div>
+            </button>
+          </model-viewer>
+        </div>
+        <div class="info">
+          <p>
+            A giant, plant-eating mammal that lived in cold climates. It had
+            long, curved tusks, thick fur, and a layer of fat to keep warm.
+            Woolly mammoths lived during the Ice Age and went extinct about
+            10,000 years ago.
+          </p>
+          <audio controls>
+            <source src="audio/Mammoth.wav" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="gallery">
+        <img src="images/Mammoth/Mammoth-Camera 1.png" alt="Gallery image 1" />
+        <img src="images/Mammoth/Mammoth-Camera 2.png" alt="Gallery image 2" />
+        <img src="images/Mammoth/Mammoth-Camera 3.png" alt="Gallery image 3" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>© 2024 Prehistoric Creatures. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

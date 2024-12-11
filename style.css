@@ -1,0 +1,284 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+  color: #4a5932;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #4a5932; /* Earthy green for headings */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5ede1; /* Light earthy background */
+  color: #2b2b2b; /* Dark neutral text */
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.disclaimer {
+  text-align: center;
+  background: #d9cab2; /* Soft beige */
+  padding: 15px;
+  font-style: italic;
+  color: #4a5932; /* Matching earthy green */
+}
+
+.hero {
+  display: flex;
+  flex-direction: column; /* Stack the image and intro vertically */
+}
+
+.main-image {
+  position: relative;
+  width: 100%; /* Occupy the full screen width */
+  height: 100vh; /* Occupy the full viewport height */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.main-image img {
+  width: 100%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensure the image covers the area proportionally */
+  object-position: center; /* Default: center the image on larger screens */
+}
+
+/* Intro Section */
+.intro {
+  padding: 40px 20px; /* Add padding for spacing */
+  text-align: center; /* Center the intro text */
+  max-width: 800px; /* Restrict the width for readability */
+  margin: 0 auto; /* Center-align the intro content horizontally */
+  color: #2b2b2b; /* Neutral text color */
+  background-color: #f5ede1; /* Optional: a light background for contrast */
+}
+
+.intro h1 {
+  margin-bottom: 15px;
+}
+
+.intro p {
+  line-height: 1.6; /* Improve readability */
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+/* Sticky Nav */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+  background-color: #4a5932; /* Solid background to make it stand out */
+  padding: 20px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* General Styles for Dino Sections */
+.dino-section {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 40px;
+}
+
+.dino-section .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-bottom: 20px;
+}
+
+.dino-section .model,
+.dino-section .info {
+  flex: 1 1 45%; /* Flex children to take up 45% of the width */
+  margin: 10px;
+  text-align: left;
+}
+
+model-viewer {
+  width: 100%;
+  height: 600px;
+  background-color: #1f1f1f;
+  z-index: 1;
+}
+
+.dino-section .info p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+audio {
+  margin-top: 20px;
+  width: 100%; /* Make it span the container's width */
+  max-width: 600px; /* Restrict the width */
+}
+
+/* Gallery Section */
+.dino-section .gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between images */
+}
+
+.dino-section .gallery img {
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Base styles for hotspots */
+.Hotspot {
+  position: relative;
+  background-color: rgba(255, 0, 0, 0.7); /* Red with transparency */
+  border-radius: 50%; /* Makes it circular */
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Hover effect */
+.Hotspot:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  background-color: rgba(255, 0, 0, 1); /* Make color fully opaque */
+}
+
+/* Annotation styles (tooltip) */
+.HotspotAnnotation {
+  position: absolute;
+  top: -40px; /* Position above the hotspot */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  visibility: hidden; /* Hidden by default */
+  opacity: 0; /* Transparent by default */
+  transition: opacity 0.2s, visibility 0.2s;
+  pointer-events: none; /* Prevent interaction */
+}
+
+/* Show annotation on hover */
+.Hotspot:hover .HotspotAnnotation {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Footer */
+
+footer {
+  background-color: #4a5932; /* Earthy green */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .intro {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dino-section .content {
+    align-content: center;
+  }
+
+  .dino-section .model,
+  .dino-section .info {
+    flex: 1 1 100%; /* Flex children to take up 45% of the width */
+    margin: 10px;
+    text-align: left;
+  }
+
+  /* Stacking gallery images vertically */
+  .dino-section .gallery {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center align images */
+  }
+
+  .dino-section .gallery img {
+    width: 80%; /* Larger images on smaller screens */
+  }
+
+  .gallery img {
+    transition: none; /* Remove smooth animations */
+    cursor: default; /* Default cursor */
+  }
+
+  .gallery img:hover {
+    transform: none; /* Disable scaling */
+    box-shadow: none; /* Remove shadow effect */
+  }
+
+  .gallery img::after {
+    opacity: 0; /* Remove overlay effect */
+  }
+}
